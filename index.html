@@ -9,7 +9,8 @@
     <link rel="apple-touch-icon" href="images/myCustomIcon.png" />
     <link rel="apple-touch-icon-precomposed" href="images/myCustomIcon.png" />    
     <!--script type="text/javascript" charset="utf-8" src="lib/demo.js"></script-->
-
+    <link href='http://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    
     <title>Kilolungo</title>
     
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.2.0.min.css" />    
@@ -40,7 +41,7 @@
 
 	<div data-role="content">	
         <ul data-role="listview" data-inset="true">
-                    <li><a href="#kilo-dates" data-transition="slide">Dates</a></li>
+                    <li><a href="#kilo-dates" data-transition="slide">Lesen</a></li>
                     <li><a href="#kilo-about" data-transition="slide">About</a></li>
         </div>
 	</div><!-- /content -->
@@ -56,9 +57,17 @@
         </div>
         <div data-role="page" id="kilo-dates" data-add-back-btn="true">
              <div data-role="header">
-              <h1>Dates</h1>
+              <h1>Lesen</h1>
              </div>
-             Dates
+			  <div class="ui-grid-solo">
+				<div class="ui-block-a"><button id="kilo-more" type="v" data-theme="b">More</button></div>
+				<div class="ui-block-a" id="random-word" ><p style="font-family: 'Chango', cursive; font-size: 48px" >Click to start</p></div>
+			  </div>
+			  <div class="ui-grid-b">
+				<div class="ui-block-a">image a</div>
+				<div class="ui-block-b">image b</div>
+				<div class="ui-block-c">image c</div>
+			 </div>
         </div>
 
 <!-- div data-role="view" data-title="Dates" id="kilo-dates" data-layout="default">
