@@ -1,29 +1,47 @@
 <html>
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kilolungo</title>
         <!--script type="text/javascript" charset="utf-8" src="lib/demo.js"></script-->
-		<!-- STYLESHEETS -->
-		<link rel="stylesheet" href="stylesheets/lungo.css">
-		<link rel="stylesheet" href="stylesheets/lungo.icon.css">
-		<link rel="stylesheet" href="stylesheets/lungo.theme.default.css">
+    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.2.0.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.2.0.min.js"></script>
+    <script type="text/javascript" src="lib/kilo.js"></script>
 
-
-		<!-- SCRIPTS -->
-        <script type="text/javascript" src="lib/jquery.js"></script>
-    </head>
+	
+</head>
     <body>
 
-        <section id="main">
-            <header data-back="home blue" data-title="Kilo"></header>
-            <footer class="toolbar"></footer>
+<div data-role="page" id="kilo-home">
 
-            <article id="kilo-home" class="list" >
+	<div data-role="header">
+		<h1>Kilo</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+        <ul data-role="listview" data-inset="true">
                     <li><a href="#kilo-dates" data-transition="slide">Dates</a></li>
                     <li><a href="#kilo-about" data-transition="slide">About</a></li>
-            </article>
-        <article id="kilo-about">about</article>
-        <article id="kilo-dates">dates</article>
-        <!--div data-role="view" data-title="Dates" id="kilo-dates" data-layout="default">
+        </div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+        <div data-role="page" id="kilo-about" data-add-back-btn="true">
+        	<div data-role="header">
+		     <h1>About</h1>
+	        </div>
+            about
+        </div>
+        <div data-role="page" id="kilo-dates" data-add-back-btn="true">
+             <div data-role="header">
+              <h1>Dates</h1>
+             </div>
+             Dates
+        </div>
+
+<!-- div data-role="view" data-title="Dates" id="kilo-dates" data-layout="default">
             <ul data-role="listview" data-style="inset" data-type="group">
              <li>
                 <ul>
@@ -66,9 +84,7 @@
         <div data-role="view" data-title="Create Entry" id="kilo-create-entry" data-layout="default">
         </div-->
 
-        
-        </section>
-
+    
         
 
 
@@ -149,9 +165,6 @@
             </form>
         </div>
  -->
-		<script src="javascripts/quo.js"></script>
-		<script src="javascripts/lungo.js"></script>
-        <script type="text/javascript" src="lib/kilo.js"></script>
  
     </body>
 </html>
